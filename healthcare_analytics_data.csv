@@ -1,0 +1,13 @@
+PatientID,Age,Gender,Visits,ChronicCondition,TotalCost,InsuranceType
+1001,45,Male,3,Yes,12000,Private
+1002,60,Female,5,Yes,18000,Government
+1003,30,Male,1,No,4000,Private
+1004,72,Female,6,Yes,25000,Government
+1005,55,Male,4,No,15000,Private
+1006,40,Female,2,No,8000,Private
+1007,28,Female,1,No,3000,Private
+1008,66,Male,5,Yes,22000,Government
+1009,50,Female,3,No,11000,Private
+1010,38,Male,2,No,7000,Private
+1011,80,Female,7,Yes,30000,Government
+1012,62,Male,4,Yes,17000,Government
