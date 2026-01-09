@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("healthcare_analytics_data.csv")
 
-# ---------- Basic summaries ----------
 print("\nAverage TotalCost:", round(df["TotalCost"].mean(), 2))
 print("Median TotalCost:", df["TotalCost"].median())
 
@@ -21,7 +20,7 @@ print("\nCorrelation between Visits and TotalCost:", round(corr_visits_cost, 3))
 corr_age_cost = df["Age"].corr(df["TotalCost"])
 print("Correlation between Age and TotalCost:", round(corr_age_cost, 3))
 
-# -------- Plot 1: Chronic vs Non-chronic (bar) --------
+//Plot 1: Chronic vs Non-chronic (bar)
 cost_by_chronic = df.groupby("ChronicCondition")["TotalCost"].mean()
 
 plt.figure()
@@ -33,7 +32,7 @@ plt.tight_layout()
 plt.savefig("avg_cost_by_chronic.png", dpi=200)
 plt.close()
 
-# -------- Plot 2: Visits vs TotalCost (scatter) --------
+//Plot 2: Visits vs TotalCost (scatter)
 plt.figure()
 plt.scatter(df["Visits"], df["TotalCost"])
 plt.title("Healthcare Visits vs Total Cost")
@@ -43,7 +42,7 @@ plt.tight_layout()
 plt.savefig("visits_vs_totalcost.png", dpi=200)
 plt.close()
 
-# -------- Plot 3: Age vs TotalCost (scatter) --------
+//Plot 3: Age vs TotalCost (scatter)
 plt.figure()
 plt.scatter(df["Age"], df["TotalCost"])
 plt.title("Age vs Total Healthcare Cost")
